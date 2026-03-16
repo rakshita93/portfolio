@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rakshita Pradhan | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#0f172a;
+color:white;
+transition:0.4s;
+}
+
+.purple{
+background:#1a0325;
+color:#e9d5ff;
+}
+
+header{
+text-align:center;
+padding:70px;
+background:#020617;
+}
+
+header h1{
+font-size:42px;
+color:#a855f7;
+}
+
+nav{
+text-align:center;
+background:#020617;
+padding:10px;
+}
+
+nav a{
+margin:15px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:60px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+color:#a855f7;
+}
+
+.btn{
+background:#a855f7;
+padding:10px 15px;
+border-radius:6px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+margin:5px;
+display:inline-block;
+}
+
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+margin:20px 0;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+}
+
+.skill{
+margin:15px 0;
+}
+
+.progress{
+background:#1e293b;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress div{
+height:10px;
+background:#a855f7;
+}
+
+.timeline{
+border-left:3px solid #a855f7;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:20px;
+}
+
+.repo{
+background:#1e293b;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Rakshita Pradhan</h1>
+
+<h3><span id="typing"></span></h3>
+
+<p>
+Cyber Security Student | Developer | Hackathon Enthusiast
+</p>
+
+<a href="rakshita_resume.pdf" target="_blank" class="btn">View Resume</a>
+<a href="rakshita_resume.pdf" download class="btn">Download Resume</a>
+
+<br><br>
+
+<a class="btn" href="https://www.linkedin.com/in/rakshita-pradhan-9a9ab3311/" target="_blank">LinkedIn</a>
+<a class="btn" href="https://github.com/rakshita93" target="_blank">GitHub</a>
+
+<br><br>
+
+<button class="btn" onclick="toggleTheme()">Toggle Theme</button>
+
+</header>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#coding">Coding Profiles</a>
+<a href="#github">GitHub</a>
+<a href="#resume">Resume</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Computer Science Engineering (Cyber Security) student with strong interests in cybersecurity, software development, and emerging technologies. I enjoy building practical solutions that solve real-world problems while improving digital security.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">
+Python
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+Java
+<div class="progress"><div style="width:70%"></div></div>
+</div>
+
+<div class="skill">
+Cyber Security
+<div class="progress"><div style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+SQL
+<div class="progress"><div style="width:75%"></div></div>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-card">
+<h3>Scam Guard UPI</h3>
+<p>Detects scam IDs and phishing activities during digital payments.</p>
+</div>
+
+<div class="project-card">
+<h3>HUMRAH</h3>
+<p>Citizen-government issue reporting platform.</p>
+</div>
+
+<div class="project-card">
+<h3>Weather API</h3>
+<p>Real-time weather and air quality dashboard.</p>
+</div>
+
+</section>
+
+<section id="achievements">
+
+<h2>Achievements</h2>
+
+<div class="timeline">
+
+<div>
+<strong>2025</strong><br>
+Runner-Up — TechritZ (International Level Techfest)
+</div>
+
+<div>
+<strong>2024</strong><br>
+NPTEL Joy of Computing — Elite + Silver Medal
+</div>
+
+<div>
+<strong>2025</strong><br>
+WhiteHack 1.0 — Best UI/UX Award
+</div>
+
+</div>
+
+</section>
+
+<section id="coding">
+
+<h2>Coding Profiles</h2>
+
+<p>
+Skillrack (2600+ points)
+<br>
+<a class="btn" href="http://www.skillrack.com/profile/501367/bec078719043830bcfd315b48c5e93c97a0143b9" target="_blank">
+View Skillrack Profile
+</a>
+</p>
+
+<p>
+CodeChef
+<br>
+<a class="btn" href="https://www.codechef.com/users/fast_treat_19" target="_blank">
+View CodeChef Profile
+</a>
+</p>
+
+</section>
+
+<section id="github">
+
+<h2>GitHub Projects</h2>
+
+<div id="repos"></div>
+
+</section>
+
+<section id="resume">
+
+<h2>Resume</h2>
+
+<iframe src="rakshita_resume.pdf" width="100%" height="600px"></iframe>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: rakshitapradhan9@gmail.com</p>
+
+<p>Phone: +91 9361229928</p>
+
+<input placeholder="Your Name">
+<input placeholder="Email">
+<textarea placeholder="Message"></textarea>
+
+<button class="btn">Send</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 Rakshita Pradhan</p>
+
+</footer>
+
+<script>
+
+const words=[
+"Cyber Security Student",
+"Software Developer",
+"Hackathon Enthusiast",
+"AI Explorer"
+];
+
+let i=0;
+let j=0;
+
+function type(){
+if(j<words[i].length){
+document.getElementById("typing").innerHTML+=words[i].charAt(j);
+j++;
+setTimeout(type,80);
+}
+else{
+setTimeout(erase,1000);
+}
+}
+
+function erase(){
+if(j>0){
+document.getElementById("typing").innerHTML=words[i].substring(0,j-1);
+j--;
+setTimeout(erase,40);
+}
+else{
+i=(i+1)%words.length;
+setTimeout(type,200);
+}
+}
+
+type();
+
+function toggleTheme(){
+document.body.classList.toggle("purple");
+}
+
+fetch("https://api.github.com/users/rakshita93/repos")
+.then(res=>res.json())
+.then(data=>{
+
+let container=document.getElementById("repos");
+
+data.slice(0,5).forEach(repo=>{
+
+container.innerHTML+=`
+<div class="repo">
+
+<h3>${repo.name}</h3>
+
+<p>${repo.description || "No description"}</p>
+
+<a class="btn" href="${repo.html_url}" target="_blank">View Project</a>
+
+</div>
+`;
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
